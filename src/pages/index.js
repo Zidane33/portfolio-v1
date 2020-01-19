@@ -18,8 +18,12 @@ const IndexPage = () => (
       <Card name={'Grad-Portfolios'} />
       <Card name={'GSA-Carleton'} />
     </div>
-    <About />
-    <Contact />
+    <div id="about">
+      <About />
+    </div>
+    <div id="contact">
+      <Contact />
+    </div>
   </Layout>
 )
 

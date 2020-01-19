@@ -9,11 +9,15 @@ export default class Menu extends React.Component{
             <nav>
                 <ul className="ulStyle">
                     <li className='logoStyle'> <Logo /></li>
-                    <li className='liStyle'>ABOUT</li>
+                    <li className='liStyle'>
+                        <a href="#about">ABOUT</a>
+                    </li>
                     <li className='liStyle'>
                         <a href="#projects">PROJECTS</a>
                     </li>
-                    <li className='liStyle'>RESUME</li>
+                    <li className='liStyle'>
+                        <a href="#">RESUME</a>
+                    </li>
                     <li className='liStyle'>
                         <a href="#contact">CONTACT</a>
                     </li>
