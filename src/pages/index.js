@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import Hero from '../components/Hero'
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from '../components/Card'
+import Contact from '../components/Contact'
+import About from '../components/AboutMe'
+
+const bookWorm = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum doloribus consectetur perferendis alias dignissimos? Alias repudiandae quisquam eum consectetur at exercitationem vitae ipsa quos obcaecati totam, nulla dolorem sequi minima! Quam magni ab saepe, ex assumenda culpa earum modi porro a consequatur vel ea laborum harum, rerum recusandae at nesciunt?`
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Hero />
+    <div id="projects" style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
+      <Card name={'BookWorm'} text={bookWorm} />
+      <Card name={'Shopify'} />
+      <Card name={'Grad-Portfolios'} />
+      <Card name={'GSA-Carleton'} />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <About />
+    <Contact />
   </Layout>
 )
 

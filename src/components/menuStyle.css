@@ -1,0 +1,28 @@
+.ulStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    color: white;
+    font-family: helvetica;
+    top: 0px
+}
+
+.logoStyle {
+    flex-grow: 1;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+}
+
+.liStyle {
+    margin: 0px 20px 0px 0px;
+    list-style: none;
+    align-self: center;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: white
+}

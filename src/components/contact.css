@@ -1,0 +1,54 @@
+.container {
+    color: black;
+    height: 100vh;
+    display: flex; 
+    justify-content: center
+}
+
+.animation {
+    background-color: black;
+    border-radius: 10px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.animation::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(purple, purple), linear-gradient(white, white);
+    animation: rotate 5s linear infinite;
+}
+	
+.animation::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: black;
+    border-radius: 5px;
+}
+
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
