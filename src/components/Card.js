@@ -7,7 +7,8 @@ const cardStyle = {
     width: '45%',
     height: 'auto',
     margin: '100px 25px 100px 25px',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    color: '#F6F0FD'
 }
 
 export default class Card extends React.Component {
@@ -17,7 +18,7 @@ export default class Card extends React.Component {
     render(){
         return (
             <Flippy flipOnHover={false} flipDirecttion={"horizontal"} style={cardStyle} flipOnClick={true}>
-                <FrontSide animationDuration={1500} style={{backgroundColor: 'purple'}}>
+                <FrontSide animationDuration={1500} style={{backgroundColor: '#9C6ADE'}}>
                     <h1 style={{display: 'inline'}}>{this.props.name}</h1>
                     <p style={{display: 'inline', fontSize: '0.9em', marginLeft: '20px'}}>-- click for demo</p>
                     <p style={{height: '50%', paddingTop: '20%', paddingBottom: '20%'}}>{this.props.text}</p>

@@ -11,7 +11,7 @@ const Picture = () => {
 
 const Bio = () => {
     return(
-        <div style={{margin:"25px", flexGrow: '1'}}>
+        <div style={{margin:"25px", flexGrow: '1', color: '#50495A'}}>
             <h3>About Me</h3>
             <p>
                 I am an accomplished Executive Director who works with graduate students to help them navigate graduate school.
@@ -28,7 +28,7 @@ const Bio = () => {
 
 const About = () => {
     return (
-        <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', height: '100%', background: 'black', padding: '1em', marginBottom: '2em'}}>
+        <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'nowrap', height: '100%', background: '#E3D0FF', padding: '1em', marginBottom: '2em'}}>
             <Picture />
             <Bio />
         </div>

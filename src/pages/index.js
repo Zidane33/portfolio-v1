@@ -11,7 +11,7 @@ const shopify = `A headless Shopify solution for an aspiring artist in the Ottaw
 const gsa = `My current workplace has a wordpress website that can be very slow. I am in the process of converting the website to utilize a React front end and query wordpress' back end for all the pages and posts. It's still a work in progress`;
 const grad = `A graduate student portfolio built using React.`
 
-const bookWormTech = ['Flask', 'PostgresSQL', 'Jinja2', 'html', 'css', 'REST api']
+const bookWormTech = ['Flask', 'PostgresSQL', 'Jinja2', 'HTML', 'CSS', 'REST api']
 const shopifyTech = ['React', 'Gatsbyjs', 'Shopify', 'GraphQL']
 const gradTech = ['React', 'CSS', 'JSX']
 const gsaTech = ['Headless Wordpress', 'REST api', 'GraphQL', 'Gatsbyjs', 'React']
